@@ -3,7 +3,7 @@ version: 1.0.0
 inherits: wercker-labs/docker
 type: main
 platform: ubuntu@12.04
-description: Wercker box with ssh, scp and docker. Docker 1.7
+description: Wercker box with ssh, scp and docker. Docker 1.7.
 keywords:
   - docker
   - ssh
