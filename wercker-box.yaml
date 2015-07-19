@@ -1,0 +1,17 @@
+name: docker-box
+version: 1.0.0
+inherits: wercker/ubuntu12.04-webessentials@0.0.4
+type: main
+platform: ubuntu@12.04
+description: Wercker box with ssh, scp and docker
+keywords:
+  - docker
+  - ssh
+  - scp
+  - wget
+script: |
+  sudo apt-get update -y
+  sudo apt-get install linux-image-generic-lts-trusty -y
+  sudo apt-get ssh openssh-client -y
+  sudo apt-get install wget -y
+  sudo wget -qO- https://get.docker.com/ | sh
