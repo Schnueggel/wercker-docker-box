@@ -8,11 +8,13 @@ keywords:
   - docker
   - ssh
   - scp
-  - wget
-packages: docker@1.7
+  - ubuntu
+packages:
+  - docker
+  - ssh
+  - scp
 script: |
   sudo apt-get update -y
   sudo apt-get install linux-image-generic-lts-trusty -y
   sudo apt-get ssh openssh-client -y
-  sudo apt-get install wget -y
   sudo wget -qO- https://get.docker.com/ | sh
