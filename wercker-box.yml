@@ -16,6 +16,6 @@ packages:
 script: |
   sudo apt-get update -y
   sudo apt-get install linux-image-generic-lts-trusty -y
-  sudo apt-get ssh -y
-  sudo apt-get openssh-client -y
+  sudo apt-get install ssh -y
+  sudo apt-get install openssh-client -y
   sudo wget -qO- https://get.docker.com/ | sh
