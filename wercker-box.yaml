@@ -9,6 +9,7 @@ keywords:
   - ssh
   - scp
   - wget
+packages: docker@1.7
 script: |
   sudo apt-get update -y
   sudo apt-get install linux-image-generic-lts-trusty -y
